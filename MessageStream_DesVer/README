@@ -1,11 +1,11 @@
-In order to run the files move to the main directory
-Then build, in the terminal run "rustc src/main.rs" for the designated verifier test, or "rustc src/message_stream.rs"
-Then to execute use "./main" and "./message_stream" respectively
-NOTE: The main file may need to be run using the run button mentioned below to cause it to import dependencies more easily.
+In order to run the files move to the MessageStream_DesVer directory
+Then to build, in the terminal hit run code (in vsCode) for the designated verifier test, or "rustc src/message_stream.rs"
+To execute use for DesVer the code should run and for message streams enter"./message_stream"
+
+NOTE: Rustup is also required to run rustc commands. The commands are run differently because the main file requires dependencies which the run button automatically add.
 
 
-
-The desVer runs each algorithm 1,000 times and finds the average execution times. I ran it using the "run" button on VScode because it requires the Cargo.tml file for the dependencies it has.
+The desVer (designated verifier) elavuation runs each algorithm 1,000 times and finds the average execution times. I ran it using the "run" button on VScode because it requires the Cargo.tml file for the dependencies it has.
 
 To change the expirement for message streams simply update the expirement variable.
-The message streams test, runs 100 bulk and 10 priority messages to see the order of execution, to update the test to see the percentage of each instruction type executed, simply change the for loops to execute for 125, and then count the amount of each type run before the 1 minute mark. 
+The message stream avaluation tests 100 bulk and 10 priority messages to see their order of execution, and time required to do so. To update the test to see the percentage of each instruction type executed, simply change the for loops to execute for 125, and then count the amount of each type run before the 1 minute mark. 
